@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  
+  <title>Supra upload</title>
+</head>
+<body id="page-top" class="dark-node">
+  <div id="sayings">
+  <div class="container">
+ 
+    <h1>Upload de arquivo</h1>
+    <%= typeof msg != 'undefined' ? msg : '' %>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Arquivo</span>
+          <input name="recfile" type="file">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <br>
+    <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>  
+     <b><h3 id="one"><marquee width="70%">Se você encontrar um bug, por favor relate-o imediatamente, obrigado</marquee></h3></b>
+             <li class="nav-item">    
+            <a class="nav-link collapsed" href="https://wa.me/5593991919748">
+            <i class="fab fa-fw fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+            </a>
+           </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://instagram.com/nilton-cant">
+            <i class="fab fa-fw fa-instagram"></i>
+                   <span>Instagram</span>
+        </a>
+       </li>
+      </div>   
+</body>
+</html>
